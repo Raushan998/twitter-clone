@@ -1,0 +1,486 @@
+<html>
+<head>
+  <title>API Docs</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <style>
+    @page { size: 24.5cm 35cm } /* http://www.princexml.com/doc/9.0/page-size/ */
+
+    body {
+      color: #333333;
+      font-family: 'Verdana', 'Droid Sans', sans-serif;
+      font-size: 14px;
+      padding: 15px;
+      margin: 0;
+    }
+    body *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .container {
+      padding: 0;
+      width: 100%;
+    }
+    h1, h2, ul {
+      margin: 0 0 10px;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.286em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    h3{
+      font-size: 1.57em;
+      margin: 14px 0 0px;
+      padding: 0;
+    }
+    h4{
+      font-size: 1.15em;
+      margin: 14px 0 0 0;
+      padding: 0;
+    }
+    h5{
+      font-size: 1em;
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+    a {
+      color: #1d96d2;
+      text-decoration: none;
+    }
+    .required {
+      color: #f00;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    li{
+      margin-bottom: 4px;
+    }
+    .table{
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    table.params{
+      width: 100%;
+      font-size: 1em;
+      padding: 0;
+      margin: 0;
+      border-collapse: collapse;
+      border-spacing: 0px;
+    }
+    table.params tr{
+      border-top: 1px solid #cccccc;
+    }
+    table.params tr:first-child{
+      border-top: 0
+    }
+    table.params th, td{
+      margin: 0;
+      padding: 5px 8px;
+      text-align: left;
+      border-left: 1px solid #cccccc;
+      font-size: 1em;
+    }
+    table.params th:first-child, td:first-child{
+      border-left: 0;
+    }
+    table.params td{
+      background: #f9f9f9;
+    }
+    table.params tr:nth-child(2n+1) td{
+      background: #ffffff;
+    }
+    table.params td i{
+      font-style: normal;
+      font-weight: 300;
+      float: right;
+    }
+
+    code, ol{
+      display: block;
+      border-radius: 6px;
+      border: 1px solid #cccccc;
+      width: 100%;
+      background: #f5f5f5;
+      font-family: 'Courier New','Droid Sans Mono', monospace;
+      font-size: 0.85em;
+      font-weight: 700;
+    }
+    code{
+      white-space: pre-line;
+      word-wrap: break-word;
+      padding: 10px;
+      font-size: 0.85em;
+    }
+    code i{
+      font-weight: 400;
+      font-style: normal;
+    }
+    .CodeRay td {
+      width: 99%;
+    }
+    .CodeRay td.line-numbers {
+      width: 1%;
+    }
+    ol{
+      margin: 0 0 10px 0;
+      padding: 0 10px 0 50px;
+    }
+    ol li{
+      white-space: pre;
+      word-wrap: break-word;
+      border-left: 1px solid #ccc;
+      margin: 0;
+      padding: 0 4px;
+    }
+    ol li:first-child {
+      padding-top: 5px;
+    }
+    ol li:last-child {
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>
+      <a href="rspec_doc_table_of_content.html" target="specs">&#9650</a>
+      Api::V1::Tweets GET /index (success)
+    </h3>
+
+    <p>
+      
+    </p>
+
+    <code>GET /api/v1/tweets</code>
+
+    
+
+    <h4>Request</h4>
+
+    
+      <h5>Headers</h5>
+      <code>Content-Type: <i></i>
+Accept: <i>text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</i></code>
+    
+
+    <h5>Route</h5>
+    <code>GET /api/v1/tweets</code>
+
+    <h5>Query parameters</h5>
+    
+      <code>empty</code>
+    
+
+    <!--<h5><a href="http://curl.haxx.se/docs/manpage.html">CURL</a> Example</h5>
+    <code>TODO</code>-->
+
+    <h5>Body</h5>
+    
+      <code>empty</code>
+    
+
+    <h4>Response</h4>
+
+    
+      <h5>Headers</h5>
+      <code>X-Download-Options: <i>noopen</i>
+X-Permitted-Cross-Domain-Policies: <i>none</i>
+Referrer-Policy: <i>strict-origin-when-cross-origin</i>
+Content-Type: <i>application/json; charset=utf-8</i>
+Content-Length: <i>1525</i></code>
+    
+
+    <h5>Status code (<a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes">wiki</a>)</h5>
+    <code>HTTP 200</code>
+
+    
+      <h5>Body</h5>
+
+      
+        
+        <code>
+          <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+<a href="#n22" name="n22">22</a>
+<a href="#n23" name="n23">23</a>
+<a href="#n24" name="n24">24</a>
+<a href="#n25" name="n25">25</a>
+<a href="#n26" name="n26">26</a>
+<a href="#n27" name="n27">27</a>
+<a href="#n28" name="n28">28</a>
+<a href="#n29" name="n29">29</a>
+<strong><a href="#n30" name="n30">30</a></strong>
+<a href="#n31" name="n31">31</a>
+<a href="#n32" name="n32">32</a>
+<a href="#n33" name="n33">33</a>
+<a href="#n34" name="n34">34</a>
+<a href="#n35" name="n35">35</a>
+<a href="#n36" name="n36">36</a>
+<a href="#n37" name="n37">37</a>
+<a href="#n38" name="n38">38</a>
+<a href="#n39" name="n39">39</a>
+<strong><a href="#n40" name="n40">40</a></strong>
+<a href="#n41" name="n41">41</a>
+<a href="#n42" name="n42">42</a>
+<a href="#n43" name="n43">43</a>
+<a href="#n44" name="n44">44</a>
+<a href="#n45" name="n45">45</a>
+<a href="#n46" name="n46">46</a>
+<a href="#n47" name="n47">47</a>
+<a href="#n48" name="n48">48</a>
+<a href="#n49" name="n49">49</a>
+<strong><a href="#n50" name="n50">50</a></strong>
+<a href="#n51" name="n51">51</a>
+<a href="#n52" name="n52">52</a>
+<a href="#n53" name="n53">53</a>
+<a href="#n54" name="n54">54</a>
+<a href="#n55" name="n55">55</a>
+<a href="#n56" name="n56">56</a>
+<a href="#n57" name="n57">57</a>
+<a href="#n58" name="n58">58</a>
+<a href="#n59" name="n59">59</a>
+<strong><a href="#n60" name="n60">60</a></strong>
+<a href="#n61" name="n61">61</a>
+<a href="#n62" name="n62">62</a>
+<a href="#n63" name="n63">63</a>
+<a href="#n64" name="n64">64</a>
+<a href="#n65" name="n65">65</a>
+<a href="#n66" name="n66">66</a>
+<a href="#n67" name="n67">67</a>
+<a href="#n68" name="n68">68</a>
+<a href="#n69" name="n69">69</a>
+<strong><a href="#n70" name="n70">70</a></strong>
+<a href="#n71" name="n71">71</a>
+<a href="#n72" name="n72">72</a>
+<a href="#n73" name="n73">73</a>
+<a href="#n74" name="n74">74</a>
+<a href="#n75" name="n75">75</a>
+<a href="#n76" name="n76">76</a>
+<a href="#n77" name="n77">77</a>
+<a href="#n78" name="n78">78</a>
+<a href="#n79" name="n79">79</a>
+<strong><a href="#n80" name="n80">80</a></strong>
+<a href="#n81" name="n81">81</a>
+<a href="#n82" name="n82">82</a>
+<a href="#n83" name="n83">83</a>
+<a href="#n84" name="n84">84</a>
+<a href="#n85" name="n85">85</a>
+<a href="#n86" name="n86">86</a>
+<a href="#n87" name="n87">87</a>
+<a href="#n88" name="n88">88</a>
+<a href="#n89" name="n89">89</a>
+<strong><a href="#n90" name="n90">90</a></strong>
+<a href="#n91" name="n91">91</a>
+<a href="#n92" name="n92">92</a>
+<a href="#n93" name="n93">93</a>
+<a href="#n94" name="n94">94</a>
+<a href="#n95" name="n95">95</a>
+<a href="#n96" name="n96">96</a>
+<a href="#n97" name="n97">97</a>
+<a href="#n98" name="n98">98</a>
+<a href="#n99" name="n99">99</a>
+<strong><a href="#n100" name="n100">100</a></strong>
+<a href="#n101" name="n101">101</a>
+<a href="#n102" name="n102">102</a>
+<a href="#n103" name="n103">103</a>
+<a href="#n104" name="n104">104</a>
+<a href="#n105" name="n105">105</a>
+<a href="#n106" name="n106">106</a>
+<a href="#n107" name="n107">107</a>
+<a href="#n108" name="n108">108</a>
+<a href="#n109" name="n109">109</a>
+<strong><a href="#n110" name="n110">110</a></strong>
+<a href="#n111" name="n111">111</a>
+<a href="#n112" name="n112">112</a>
+<a href="#n113" name="n113">113</a>
+<a href="#n114" name="n114">114</a>
+<a href="#n115" name="n115">115</a>
+<a href="#n116" name="n116">116</a>
+<a href="#n117" name="n117">117</a>
+<a href="#n118" name="n118">118</a>
+<a href="#n119" name="n119">119</a>
+<strong><a href="#n120" name="n120">120</a></strong>
+<a href="#n121" name="n121">121</a>
+<a href="#n122" name="n122">122</a>
+<a href="#n123" name="n123">123</a>
+<a href="#n124" name="n124">124</a>
+<a href="#n125" name="n125">125</a>
+<a href="#n126" name="n126">126</a>
+<a href="#n127" name="n127">127</a>
+<a href="#n128" name="n128">128</a>
+<a href="#n129" name="n129">129</a>
+<strong><a href="#n130" name="n130">130</a></strong>
+<a href="#n131" name="n131">131</a>
+<a href="#n132" name="n132">132</a>
+<a href="#n133" name="n133">133</a>
+<a href="#n134" name="n134">134</a>
+</pre></td>
+  <td class="code"><pre>{
+  <span style="color:#606"><span style="color:#404">&quot;</span><span>tweets</span><span style="color:#404">&quot;</span></span>: [
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">4</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">velit</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">ut</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">et</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">7</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Kimberlee Leannon</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">5</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">praesentium</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">occaecati</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">aut</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">8</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Mrs. Hilton White</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">6</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">voluptas</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">distinctio</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">in</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">9</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Miss Ozell O'Connell</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">7</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">aspernatur</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">error</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">tenetur</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">10</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Yolando Becker</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">8</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">impedit</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">aut</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">quae</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">11</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Jacqueline Gulgowski</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">9</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">excepturi</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">atque</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">rerum</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">12</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Aurelia Braun</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">10</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">ut</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">voluptatem</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">molestias</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">13</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Amb. Hassan Adams</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">11</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">beatae</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">praesentium</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">neque</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">14</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Justin Funk</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">12</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">repellendus</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">deleniti</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">facere</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">15</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Msgr. Wendy Pouros</span><span style="color:#710">&quot;</span></span>
+      }
+    },
+    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">13</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>title</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">[</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">voluptatum</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">perspiciatis</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">, </span><span style="color:#b0b">\&quot;</span><span style="color:#D20">aut</span><span style="color:#b0b">\&quot;</span><span style="color:#D20">]</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>retweets</span><span style="color:#404">&quot;</span></span>: <span style="color:#088">null</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>likes_count</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">0</span>,
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>comments</span><span style="color:#404">&quot;</span></span>: [
+
+      ],
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>user</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>id</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">16</span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>username</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Marcellus Wolff</span><span style="color:#710">&quot;</span></span>
+      }
+    }
+  ]
+}</pre></td>
+</tr></table>
+
+        </code>
+      
+    
+  </div>
+</body>
+</html>
