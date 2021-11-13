@@ -230,7 +230,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
-  bootsnap (>= 1.1.2)
+  bootsnap (~> 1.4, >= 1.4.5)
   byebug
   database_cleaner
   devise_token_auth

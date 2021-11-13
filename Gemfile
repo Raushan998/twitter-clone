@@ -21,7 +21,7 @@ gem 'devise_token_auth'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.2', require: false
+gem 'bootsnap', '~> 1.4', '>= 1.4.5'
 
 gem 'active_model_serializers', '~> 0.10.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
